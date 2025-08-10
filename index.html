@@ -67,23 +67,7 @@
             animation: fadeInUp 0.8s ease forwards;
         }
 
-        .skills-list li {
-            display: inline-block;
-            padding: 8px 14px;
-            margin: 6px;
-            border-radius: 20px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            background: #f9f9f9;
-            transition: all 0.3s ease;
-            cursor: default;
-        }
-
-        .skills-list li:hover {
-            background: #efffee;
-            border-color: #3bf664;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transform: translateY(-3px);
-        }
+        
     </style>
 </head>
 
@@ -111,7 +95,7 @@
                             
                             <li data-menuanchor="Skills"><a href="#Skills">Skills</a></li>
                             <li data-menuanchor="Resume"><a href="#Resume">Education &amp; Experience</a></li>
-                            <li data-menuanchor="Portfolio"><a href="#Portfolio">Portfolio</a></li>
+                            <li data-menuanchor="Portfolio"><a href="#Portfolio">Projects</a></li>
                             <!--<li data-menuanchor="Testimonials"><a href="#Testimonials">weap</a></li>-->
                             <li data-menuanchor="Weapons"><a href="#Weapons">Weapons</a></li>
                             
@@ -1171,7 +1155,7 @@
                                             <h2 class="slide-title animate-element delay5 fadeInUp">My Experiecne</h2>
                                         </div>
                                         <div class="edu-experi-wrap">
-                                            <div class="edu-experi-item beahance animate-element delay7 fadeInUp">
+                                            <div class="edu-experi-item animate-element delay7 fadeInUp">
                                                 <span class="years">Dec 23 - <i
                                                         class="fa-solid fa-ellipsis fa-fade"></i></span>
                                                 <div class="vacancy-content">
@@ -1180,7 +1164,7 @@
                                                     <p>Optimizing workflows and improving data integrity through business impact reports, delivering actionable insights for the operations with Power BI, ServiceNow, and Big Data tools.</p>
                                                 </div>
                                             </div>
-                                            <div class="edu-experi-item beahance animate-element delay7 fadeInUp">
+                                            <div class="edu-experi-item animate-element delay7 fadeInUp">
                                                 <span class="years">Nov 22 - May 24</span>
                                                 <div class="vacancy-content">
                                                     <span class="title">Christ University</span>
@@ -1188,7 +1172,7 @@
                                                     <p>Mentored 80+ students in programming, web development, and data analysis, fostering industry-ready skills in Python, JavaScript, and cloud tech.</p>
                                                 </div>
                                             </div>
-                                            <div class="edu-experi-item beahance animate-element delay7 fadeInUp">
+                                            <div class="edu-experi-item animate-element delay7 fadeInUp">
                                                 <span class="years">Jan 22 - Nov 23</span>
                                                 <div class="vacancy-content">
                                                     <span class="title">Huron Consulting Groups</span>
@@ -1208,33 +1192,36 @@
                 <div class="section pp-scrollable slide slide-portfolio a-slide-typed" data-name="portfolio">
                     <div class="slide-container">
                         <div class="container">
+                            <!-- Title & Counters -->
                             <div class="row align-items-center justify-content-between mb-25">
                                 <div class="col-xl-5 col-lg-6">
                                     <div class="portfolio-content">
                                         <div class="section-title mb-35">
-                                            <span class="sub-title mb-45 animate-element delay5 fadeInUp">Portfolio</span>
-                                            <h2 class="slide-title animate-element delay6 fadeInUp">Some of my Creative
+                                            <span class="sub-title mb-45 animate-element delay5 fadeInUp">Projects</span>
+                                            <h2 class="slide-title animate-element delay6 fadeInUp">
+                                                Some of my Creative
                                                 <span class="text-typed a-typed a-typed-portfolio" data-text="Works."></span>
                                             </h2>
                                         </div>
-                                        <p class="animate-element delay7 fadeInUp">Driven by a passion for data and a deep curiosity about the AI domain, I have pursued multiple courses over the past year and completed numerous projects to expand my expertise. <b><a href="#">see here.</a></b>
+                                        <p class="animate-element delay7 fadeInUp">
+                                            Driven by a passion for data and a deep curiosity about the AI domain, I have pursued
+                                            multiple courses over the past year and completed numerous projects to expand my expertise.
                                         </p>
                                         <a class="read-more mt-45 rmt-25 animate-element delay8 fadeInUp"
-                                            href="https://github.com/stimson06">Explore More <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                            href="https://github.com/stimson06">Explore More
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-xl-5 col-lg-6">
                                     <div class="counter-wrap rmb-15 animate-element delay9 fadeInUp">
                                         <div class="success-box">
                                             <span id="experienceYears" class="count-text plus" data-speed="3000" data-stop="0">0</span>
-                
                                             <script>
                                                 document.addEventListener("DOMContentLoaded", function () {
                                                     const startYear = 2022;
                                                     const currentYear = new Date().getFullYear();
                                                     const years = currentYear - startYear;
-
                                                     const span = document.getElementById("experienceYears");
                                                     span.textContent = years;
                                                     span.setAttribute("data-stop", years);
@@ -1249,23 +1236,138 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio-wrap">
-                                <div class="portfolio-item animate-element delay11 fadeInUp">
-                                    <img alt="Portfolio" src="assets/images/portfolios/portfolio1.png" />
+                
+                            <!-- Projects Two Columns -->
+                            <div class="row mt-4">
+                                <!-- Data Analytics -->
+                                <div class="col-lg-6">
+                                    <h3 class="text-center mb-4">Data Analytics</h3>
+                                    <div class="project-box">
+                                        <div class="project-content">
+                                            <div class="project-text">
+                                                <h4>
+                                                    Adventure Works
+                                                    <a href="https://github.com/your-link" target="_blank" class="project-link"
+                                                        title="View Project">
+                                                        <i class="fas fa-external-link-alt"></i>
+                                                    </a>
+                                                </h4>
+                                                <p>
+                                                    Interactive Power BI dashboard visualizing sales across regions and categories.
+                                                </p>
+                                            </div>
+                                            <div class="project-image">
+                                                <img src="assets/images/projects/AdventureWorks.png" alt="Sales Dashboard">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <div class="project-content">
+                                            <div class="project-text">
+                                                <h4>
+                                                    CXI Challenge
+                                                    <a href="https://github.com/your-link" target="_blank" class="project-link"
+                                                        title="View Project">
+                                                        <i class="fas fa-external-link-alt"></i>
+                                                    </a>
+                                                </h4>
+                                                <p>
+                                                    Interactive Power BI dashboard visualizing sales across regions and categories.
+                                                </p>
+                                            </div>
+                                            <div class="project-image">
+                                                <img src="assets/images/projects/CXI.png" alt="Sales Dashboard">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <div class="project-content">
+                                            <div class="project-text">
+                                                <h4>
+                                                    Ford GoBike
+                                                    <a href="https://github.com/your-link" target="_blank" class="project-link"
+                                                        title="View Project">
+                                                        <i class="fas fa-external-link-alt"></i>
+                                                    </a>
+                                                </h4>
+                                                <p>
+                                                    Interactive Power BI dashboard visualizing sales across regions and categories.
+                                                </p>
+                                            </div>
+                                            <div class="project-image">
+                                                <img src="assets/images/projects/FordgoBikes.png" alt="Sales Dashboard">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="portfolio-item animate-element delay13 fadeInUp">
-                                    <img alt="Portfolio" src="assets/images/portfolios/portfolio2.png" />
-                                </div>
-                                <div class="portfolio-item">
-                                    <img alt="Portfolio" src="assets/images/portfolios/portfolio1.png" />
-                                </div>
-                                <div class="portfolio-item">
-                                    <img alt="Portfolio" src="assets/images/portfolios/portfolio2.png" />
+                
+                                <!-- Machine Learning -->
+                                <div class="col-lg-6">
+                                    <h3 class="text-center mb-4">Machine Learning</h3>
+                                    <div class="project-box">
+                                        <div class="project-content">
+                                            <div class="project-text">
+                                                <h4>
+                                                    Ultimate-Tic-Tac-Toe
+                                                    <a href="https://github.com/your-link" target="_blank" class="project-link"
+                                                        title="View Project">
+                                                        <i class="fas fa-external-link-alt"></i>
+                                                    </a>
+                                                </h4>
+                                                <p>
+                                                    Interactive Power BI dashboard visualizing sales across regions and categories.
+                                                </p>
+                                            </div>
+                                            <div class="project-image">
+                                                <img src="assets/images/projects/TicTacToe.png" alt="Sales Dashboard">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <div class="project-content">
+                                            <div class="project-text">
+                                                <h4>
+                                                    Human Follow system
+                                                    <a href="https://github.com/your-link" target="_blank" class="project-link"
+                                                        title="View Project">
+                                                        <i class="fas fa-external-link-alt"></i>
+                                                    </a>
+                                                </h4>
+                                                <p>
+                                                    Interactive Power BI dashboard visualizing sales across regions and categories.
+                                                </p>
+                                            </div>
+                                            <div class="project-image">
+                                                <img src="assets/images/projects/DistanceComputer.png" alt="Sales Dashboard">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <div class="project-content">
+                                            <div class="project-text">
+                                                <h4>
+                                                    Food recommendation
+                                                    <a href="https://github.com/your-link" target="_blank" class="project-link"
+                                                        title="View Project">
+                                                        <i class="fas fa-external-link-alt"></i>
+                                                    </a>
+                                                </h4>
+                                                <p>
+                                                    Interactive Power BI dashboard visualizing sales across regions and categories.
+                                                </p>
+                                            </div>
+                                            <div class="project-image">
+                                                <img src="assets/images/projects/FoodRecomendation.png" alt="Sales Dashboard">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 
                 
                 <!-- TOOLS SECTION -->
@@ -1342,6 +1444,15 @@
             </div>
         </div>
     </div>
+
+    <div class="section fp-auto-height" id="footer-section">
+        <footer class="site-footer">
+            <p>&copy; <span id="currentYear"></span> Stimson A — Created with HTML &amp; CSS</p>
+        </footer>
+    </div>
+        // Auto-update year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!--====== Bootstrap ======-->

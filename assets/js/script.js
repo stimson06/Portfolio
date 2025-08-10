@@ -112,7 +112,7 @@
         countNumber();
         
         
-        // 04. Portfolio Carousel
+       /* // 04. Portfolio Carousel
         if ($('.portfolio-wrap').length) {
             $('.portfolio-wrap').slick({
                 infinite: true,
@@ -132,7 +132,7 @@
                     }
                 ]
             });
-        }
+        }*/
 
         
         // 05. Testimonials Carousel
